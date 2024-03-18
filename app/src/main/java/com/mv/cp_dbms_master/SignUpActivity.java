@@ -23,6 +23,9 @@ import java.util.HashMap;
 public class SignUpActivity extends AppCompatActivity {
 
 
+    //TODO: Add type of master in signup and profile activities
+
+
     Button buttonSubmit;
     EditText editTextName, editTextFlatNo, editTextNumberOfFamilyMembers;
 
