@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "68475223268",
+    "firebase_url": "https://cp-dbms-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "cp-dbms",
+    "storage_bucket": "cp-dbms.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68475223268:android:f69590feeffb3d5376c0f1",
+        "android_client_info": {
+          "package_name": "com.mv.cp_dbms"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF4Zd0FJaB31ZlWN_2ismNqytJ-PvNc9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68475223268:android:eef70d5dc752fc9076c0f1",
+        "android_client_info": {
+          "package_name": "com.mv.cp_dbms_master"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF4Zd0FJaB31ZlWN_2ismNqytJ-PvNc9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
