@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/users/madhur/Apps/AndroidStudio/Projects/CP_DBMS_Master/app/src/main/res/drawable/ic_baseline_document_scanner_24.xml" value="0.172" />
+        <entry key="..\:/users/madhur/Apps/AndroidStudio/Projects/CP_DBMS_Master/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" value="0.172" />
         <entry key="..\:/users/madhur/Apps/AndroidStudio/Projects/CP_DBMS_Master/app/src/main/res/layout/activity_home.xml" value="0.264" />
         <entry key="..\:/users/madhur/Apps/AndroidStudio/Projects/CP_DBMS_Master/app/src/main/res/layout/activity_main.xml" value="0.125" />
+        <entry key="..\:/users/madhur/Apps/AndroidStudio/Projects/CP_DBMS_Master/app/src/main/res/layout/activity_notices.xml" value="0.2" />
         <entry key="..\:/users/madhur/Apps/AndroidStudio/Projects/CP_DBMS_Master/app/src/main/res/layout/activity_profile.xml" value="0.23007246376811594" />
         <entry key="..\:/users/madhur/Apps/AndroidStudio/Projects/CP_DBMS_Master/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
+        <entry key="..\:/users/madhur/Apps/AndroidStudio/Projects/CP_DBMS_Master/app/src/main/res/layout/notices_alertdialog.xml" value="0.264" />
+        <entry key="..\:/users/madhur/Apps/AndroidStudio/Projects/CP_DBMS_Master/app/src/main/res/layout/notices_dialog.xml" value="0.264" />
+        <entry key="..\:/users/madhur/Apps/AndroidStudio/Projects/CP_DBMS_Master/app/src/main/res/layout/notices_recyclerrow.xml" value="0.2" />
       </map>
     </option>
   </component>

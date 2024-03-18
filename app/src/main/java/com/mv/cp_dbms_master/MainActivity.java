@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
                             final boolean[] found = {false};
 
 
-                            databaseReference.child("Users").child("Data").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+                            databaseReference.child("MasterUsers").child("Data").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
                                 @Override
                                 public void onComplete(@NonNull Task<DataSnapshot> task) {
                                     if (!task.isSuccessful()) {

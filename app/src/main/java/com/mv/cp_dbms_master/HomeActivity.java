@@ -3,6 +3,7 @@ package com.mv.cp_dbms_master;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -45,7 +46,8 @@ public class HomeActivity extends AppCompatActivity {
         cardViewNotices.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(HomeActivity.this, Notices.class);
+                startActivity(i);
             }
         });
 

@@ -115,6 +115,31 @@
                 app:layout_constraintStart_toEndOf="@+id/textViewFlatNo"
                 app:layout_constraintTop_toBottomOf="@+id/textViewFamilyMembers" />
 
+            <TextView
+                android:id="@+id/textViewPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="60dp"
+                android:text="Position"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFlatNo" />
+
+            <EditText
+                android:id="@+id/editTextPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="55dp"
+                android:ems="10"
+                android:text="Position in Society"
+                android:textColor="#999999"
+                app:backgroundTint="#0022AA"
+                app:layout_constraintStart_toEndOf="@+id/textViewFlatNo"
+                app:layout_constraintTop_toBottomOf="@+id/textViewFlatNo" />
+
             <Button
                 android:id="@+id/saveButton"
                 android:layout_width="wrap_content"

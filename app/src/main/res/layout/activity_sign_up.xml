@@ -89,6 +89,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextFlatNo" />
 
+    <EditText
+        android:id="@+id/editTextPosition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:hint="Position in Society? (Chairman, Secretary, etc)"
+        android:importantForAutofill="no"
+        android:textSize="25dp"
+        android:textColor="#333333"
+        android:textColorHint="#888888"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberOfFamilyMembers" />
+
 
     <Button
         android:id="@+id/buttonSubmit"
@@ -100,7 +116,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberOfFamilyMembers" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPosition" />
 
 
 

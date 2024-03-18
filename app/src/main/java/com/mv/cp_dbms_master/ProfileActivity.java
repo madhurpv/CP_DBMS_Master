@@ -25,7 +25,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     SharedPreferences sharedPreferences;
 
-    EditText editTextName, editTextFamilyMembers, editTextFlatNumber;
+    EditText editTextName, editTextFamilyMembers, editTextFlatNumber, editTextPosition;
     Button saveButton;
     ImageButton logOutButton;
 
@@ -42,11 +42,13 @@ public class ProfileActivity extends AppCompatActivity {
         editTextName = findViewById(R.id.editTextName);
         editTextFamilyMembers = findViewById(R.id.editTextFamilyMembers);
         editTextFlatNumber = findViewById(R.id.editTextFlatNumber);
+        editTextPosition = findViewById(R.id.editTextPosition);
         saveButton = findViewById(R.id.saveButton);
         logOutButton = findViewById(R.id.logOutButton);
 
 
         editTextName.setText(sharedPreferences.getString("name", "Name"));
+        editTextPosition.setText(sharedPreferences.getString("position", "Position"));
         editTextFamilyMembers.setText("" + sharedPreferences.getInt("numberOfFamilyMembers", -1));
         editTextFlatNumber.setText("" + sharedPreferences.getInt("flatNo", -1));
         editTextFlatNumber.setFocusable(false);
@@ -66,20 +68,22 @@ public class ProfileActivity extends AppCompatActivity {
                     Toast.makeText(ProfileActivity.this, "Fill all Data!", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                SharedPreferences.Editor myEdit = sharedPreferences.edit();
-                myEdit.putString("name", editTextName.getText().toString());
-                myEdit.putInt("numberOfFamilyMembers", Integer.parseInt(editTextFamilyMembers.getText().toString()));
-                myEdit.apply();
 
 
 
                 HashMap<String, Object> userDetails = new HashMap<>();
                 userDetails.put("name", editTextName.getText().toString());
+                userDetails.put("position", editTextPosition.getText().toString());
                 userDetails.put("numberOfFamilyMembers", Integer.parseInt(editTextFamilyMembers.getText().toString()));
 
                 databaseReference.child("MasterUsers").child("Data").child(sharedPreferences.getString("phone number", "-1")).updateChildren(userDetails).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
+                        SharedPreferences.Editor myEdit = sharedPreferences.edit();
+                        myEdit.putString("name", editTextName.getText().toString());
+                        myEdit.putString("position", editTextPosition.getText().toString());
+                        myEdit.putInt("numberOfFamilyMembers", Integer.parseInt(editTextFamilyMembers.getText().toString()));
+                        myEdit.apply();
                         Toast.makeText(ProfileActivity.this, "Details Updated!", Toast.LENGTH_SHORT).show();
                         finish();
                     }

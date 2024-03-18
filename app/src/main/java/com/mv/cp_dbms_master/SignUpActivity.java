@@ -23,11 +23,9 @@ import java.util.HashMap;
 public class SignUpActivity extends AppCompatActivity {
 
 
-    //TODO: Add type of master in signup and profile activities
-
 
     Button buttonSubmit;
-    EditText editTextName, editTextFlatNo, editTextNumberOfFamilyMembers;
+    EditText editTextName, editTextFlatNo, editTextNumberOfFamilyMembers, editTextPosition;
 
 
     // creating a variable for our
@@ -57,15 +55,17 @@ public class SignUpActivity extends AppCompatActivity {
         editTextName = findViewById(R.id.editTextName);
         editTextFlatNo = findViewById(R.id.editTextFlatNo);
         editTextNumberOfFamilyMembers = findViewById(R.id.editTextNumberOfFamilyMembers);
+        editTextPosition = findViewById(R.id.editTextPosition);
 
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(!editTextName.getText().toString().equals("") && !editTextFlatNo.getText().toString().equals("") && !editTextNumberOfFamilyMembers.getText().toString().equals("")) {
+                if(!editTextName.getText().toString().equals("") && !editTextFlatNo.getText().toString().equals("") && !editTextNumberOfFamilyMembers.getText().toString().equals("") && !editTextPosition.getText().toString().equals("")) {
                     SharedPreferences sharedPreferences = getSharedPreferences("MySharedPref", MODE_PRIVATE);
                     SharedPreferences.Editor myEdit = sharedPreferences.edit();
                     myEdit.putLong("login", System.currentTimeMillis());
                     myEdit.putString("name", editTextName.getText().toString());
+                    myEdit.putString("position", editTextPosition.getText().toString());
                     myEdit.putInt("flatNo", Integer.parseInt(editTextFlatNo.getText().toString()));
                     myEdit.putInt("numberOfFamilyMembers", Integer.parseInt(editTextNumberOfFamilyMembers.getText().toString()));
                     myEdit.apply();
@@ -79,6 +79,7 @@ public class SignUpActivity extends AppCompatActivity {
                     HashMap<String, Object> userDetails = new HashMap<>();
                     userDetails.put("first_login", System.currentTimeMillis());
                     userDetails.put("name", editTextName.getText().toString());
+                    userDetails.put("position", editTextPosition.getText().toString());
                     userDetails.put("flatNo", Integer.parseInt(editTextFlatNo.getText().toString()));
                     userDetails.put("numberOfFamilyMembers", Integer.parseInt(editTextNumberOfFamilyMembers.getText().toString()));
 

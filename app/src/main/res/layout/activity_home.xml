@@ -45,6 +45,7 @@
                 android:layout_marginEnd="8dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp"
+                app:cardBackgroundColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/cardViewGuests"
                 app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
@@ -89,6 +90,7 @@
                 android:layout_marginEnd="16dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp"
+                app:cardBackgroundColor="#FFFFFF"
                 app:layout_constraintStart_toEndOf="@+id/cardViewVoting"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
@@ -132,6 +134,7 @@
                 android:layout_marginEnd="8dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp"
+                app:cardBackgroundColor="#FFFFFF"
                 app:layout_constraintEnd_toStartOf="@+id/cardViewProfile"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardViewVoting">
@@ -175,6 +178,7 @@
                 android:layout_marginEnd="16dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp"
+                app:cardBackgroundColor="#FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cardViewNotices"
                 app:layout_constraintTop_toBottomOf="@+id/cardViewGuests">
@@ -217,6 +221,7 @@
                 android:layout_marginEnd="8dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp"
+                app:cardBackgroundColor="#FFFFFF"
                 app:layout_constraintEnd_toStartOf="@+id/cardViewFees"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardViewNotices">
@@ -260,6 +265,7 @@
                 android:layout_marginEnd="16dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="5dp"
+                app:cardBackgroundColor="#FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/cardViewComplaints"
                 app:layout_constraintTop_toBottomOf="@+id/cardViewProfile">
