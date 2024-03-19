@@ -135,7 +135,7 @@
                 android:layout_marginTop="55dp"
                 android:ems="10"
                 android:text="Position in Society"
-                android:textColor="#999999"
+                android:textColor="#000000"
                 app:backgroundTint="#0022AA"
                 app:layout_constraintStart_toEndOf="@+id/textViewFlatNo"
                 app:layout_constraintTop_toBottomOf="@+id/textViewFlatNo" />
@@ -146,6 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="30dp"
                 android:text="Save"
+                android:textColor="#FFFFFF"
                 android:backgroundTint="#952020"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

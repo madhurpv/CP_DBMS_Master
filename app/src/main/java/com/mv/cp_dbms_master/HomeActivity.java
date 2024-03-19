@@ -39,7 +39,8 @@ public class HomeActivity extends AppCompatActivity {
         cardViewGuests.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(HomeActivity.this, GuestsActivity.class);
+                startActivity(i);
             }
         });
 
@@ -54,14 +55,16 @@ public class HomeActivity extends AppCompatActivity {
         cardViewProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(HomeActivity.this, ProfileActivity.class);
+                startActivity(i);
             }
         });
 
         cardViewComplaints.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent i = new Intent(HomeActivity.this, Complaints.class);
+                startActivity(i);
             }
         });
 

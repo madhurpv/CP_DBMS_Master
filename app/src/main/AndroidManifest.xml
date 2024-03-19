@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CP_DBMS_Master">
         <activity
+            android:name=".Complaints"
+            android:exported="false" />
+        <activity
+            android:name=".GuestsActivity"
+            android:exported="false" />
+        <activity
             android:name=".Notices"
             android:exported="false" />
         <activity
