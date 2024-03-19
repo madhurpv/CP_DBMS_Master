@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CP_DBMS_Master">
         <activity
+            android:name=".Voting"
+            android:exported="false" />
+        <activity
             android:name=".Complaints"
             android:exported="false" />
         <activity
