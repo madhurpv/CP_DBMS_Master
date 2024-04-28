@@ -188,4 +188,12 @@ public class Voting extends AppCompatActivity implements VotingRecyclerAdapter.I
 
 
     }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        votings.clear();
+        adapter.notifyDataSetChanged();
+    }
 }

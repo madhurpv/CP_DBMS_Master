@@ -70,6 +70,9 @@ public class ComplaintsRecyclerAdapter extends RecyclerView.Adapter<ComplaintsRe
 
         holder.recyclerRowTitle.setText(titles.get(position));
         Long selectedTime = times.get(position);
+        if(selectedTime==null){
+            selectedTime = System.currentTimeMillis();
+        }
         LocalDateTime date = LocalDateTime.ofInstant(Instant.ofEpochMilli(selectedTime), ZoneId.systemDefault());
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm  dd-MM");
         holder.recyclerRowDate.setText(date.format(formatter));
@@ -110,6 +113,8 @@ public class ComplaintsRecyclerAdapter extends RecyclerView.Adapter<ComplaintsRe
             //holder.recyclerHomeCardView.setBackgroundTintList(ColorStateList.valueOf(Color.parseColor("#CACACA")));
         //}
         //Log.d("QWER", "Title : " + titles.get(position));
+
+
 
     }
 
@@ -163,4 +168,8 @@ public class ComplaintsRecyclerAdapter extends RecyclerView.Adapter<ComplaintsRe
     public interface ItemClickListener {
         void onItemClick(View view, int position);
     }
+
+
+
+
 }

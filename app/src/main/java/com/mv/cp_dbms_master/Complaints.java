@@ -51,6 +51,8 @@ public class Complaints extends AppCompatActivity {
     // Reference for Firebase.
     DatabaseReference databaseReference;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -143,6 +145,13 @@ public class Complaints extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        displayComplaints.clear();
+        adapter.notifyDataSetChanged();
     }
 
 }
