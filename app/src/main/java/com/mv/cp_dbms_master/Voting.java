@@ -190,7 +190,7 @@ public class Voting extends AppCompatActivity implements VotingRecyclerAdapter.I
             }
         });
 
-        dialog.show();
+        //dialog.show();
 
 
 
