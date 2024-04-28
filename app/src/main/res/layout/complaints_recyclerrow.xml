@@ -39,7 +39,7 @@
                     android:id="@+id/recyclerRowTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="cursive"
+
                     android:text="Title"
                     android:textColor="#000000"
                     android:textSize="25sp" />
@@ -55,7 +55,7 @@
                 android:layout_marginEnd="120dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
-                android:fontFamily="cursive"
+
                 android:text="Details...."
                 android:textColor="#333333"
                 android:textSize="13sp" />
@@ -67,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="cursive"
+
                 android:text="01-01-2000"
                 android:textColor="#333333"
                 android:textSize="16sp"
@@ -81,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="cursive"
+
                 android:text="Mr. Popatrao Pawar"
                 android:textColor="#333333"
                 android:textSize="12sp"
@@ -95,7 +95,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:fontFamily="cursive"
+
                 android:text="Delete"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
@@ -106,7 +106,7 @@
                 android:id="@+id/recyclerRowResolvedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="cursive"
+
                 android:text="Resolve"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"

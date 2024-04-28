@@ -40,7 +40,7 @@
                     android:id="@+id/recyclerRowGuestName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="cursive"
+
                     android:text="Mr. Popatrao"
                     android:textColor="#000000"
                     android:textSize="25sp" />
@@ -52,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:fontFamily="cursive"
+
                 android:text="Timings"
                 android:textColor="#333333"
                 android:textSize="18sp"
@@ -67,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="35dp"
-                android:fontFamily="cursive"
+
                 android:text="-1"
                 android:textColor="#333333"
                 android:textSize="20sp"
@@ -81,7 +81,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginEnd="15dp"
-                android:fontFamily="cursive"
+
                 android:background="@drawable/ic_baseline_directions_car_24"
                 android:layout_marginTop="13dp"
                 app:layout_constraintEnd_toEndOf="parent"

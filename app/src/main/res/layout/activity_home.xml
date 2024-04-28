@@ -300,6 +300,23 @@
             </androidx.cardview.widget.CardView>
 
 
+
+            <TextView
+                android:id="@+id/textViewEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:text="Group 6, Batch 3\nDBMS Project"
+                android:textAlignment="center"
+                android:textColor="#707070"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
